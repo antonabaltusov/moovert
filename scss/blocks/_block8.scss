@@ -1,0 +1,30 @@
+.block8 {
+  margin-top: 129px;
+  padding-top: 105px;
+  background: #475d70;
+  & .container {
+    display: flex;
+    overflow: visible;
+  }
+  &__img {
+    margin-right: 34px;
+  }
+  &__main {
+    margin-top: 24px;
+    & h2 {
+      margin-left: 28px;
+      width: 900px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+    }
+    & div {
+      margin: 60px 0px 34px;
+      & a {
+        vertical-align: middle;
+      }
+    }
+  }
+}

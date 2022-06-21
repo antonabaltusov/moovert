@@ -57,13 +57,13 @@
           </p>
         </div>
       </div>
-      <button class="button_down"><svg width="31" height="13" viewBox="0 0 31 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <a href="#block2" class="button_down"><svg width="31" height="13" viewBox="0 0 31 13" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2 2L15.5 10L29 2" stroke="#FF6C4F" stroke-width="4" stroke-linecap="round"/>
         </svg>
-      </button>
+      </a>
     </div>
   </div>
-  <div class="block block2 container">
+  <div id="block2" class="block block2 container">
     <h2>Программы<br> по <span>иммиграции:</span></h2>
     <div class="block2__list">
       <div class="block2__item">
@@ -255,20 +255,71 @@
       </div>
     </div>
   </div>
-  <div class="block7">
+  <div id="call" class="block7">
     <div class="container">
       <h2>ЕЩЕ НЕ ОПРЕДЕЛИЛИСЬ С ПРОГРАММОЙ?</h2>
       <h3>Мы подберем для вас наиболее подходящуюю программу иммиграции в США</h3>
       <form action="" method="post">
         <input class="intut_text grounded-radiants" type="text" placeholder="Имя">
         <input class="intut_text" type="tel" placeholder="+7 (927) 000-00-00" id="phone" name="phone" pattern="+7[0-9]{3}-[0-9]{2}-[0-9]{3}">
-        <div class="checkbox">
-          <input type="checkbox" name="agree" id="">
-          <p>Я даю согласие на обработку персональных данных</p>
-        </div>
+        <label class="checkbox" for="agree">
+          <input type="checkbox" name="agree" id="agree" class="checkbox__real">
+          <span class="checkbox__custom"></span>
+          Я даю согласие на обработку персональных данных
+        </label>
         <button class="block7__button" type="submit">ПОДОБРАТЬ ПРОГРАММУ </button>
       </form>
     </div>
   </div>
+  <div class="block8">
+    <div class="container">
+      <div class="block8__img">
+      <img src="./img/links_app/app.webp" data-originalres="png" alt="app">
+      </div>
+      <div class="block8__main">
+        <h2>Скачайте приложение и обучайтесь в любой обстановке</h2>
+        <div>
+          <a href="">
+          <img src="./img/links_app/googleplay.webp" data-originalres="png" alt="google play">
+          </a>
+          <a href="">
+          <img src="./img/links_app/appstore.webp" data-originalres="png" alt="app store">
+          </a>
+        </div>
+        <a class="block8__main_link" href="">
+          <img src="./img/links_app/apk.webp" data-originalres="png" alt="apk">
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class="block block9 container">
+    <div class="block9__top">
+      <h2>Последние статьи</h2>
+      <a href="">Cмотреть все новости</a>
+    </div>
+    <div class="block9__news">
+      <div class="block9__news_item">
+        <img src="./img/news/Rectangle60.webp" data-originalres="png" alt="apk">
+        <h3>Нежелательные иностранцы</h3>
+        <p>Нежелательные иностранцы. Кому запрещена иммиграция в США</p>
+        <a href="">Читать далее</a>
+      </div>
+      <div class="block9__news_item">
+        <img src="./img/news/Rectangle61.webp" data-originalres="png" alt="apk">
+        <h3>Как повысить шансы?</h3>
+        <p>Малоизвестные лайфхаки - делимся опытом</p>
+        <a href="">Читать далее</a>
+      </div>
+      <div class="block9__news_item">
+        <img src="./img/news/Rectangle62.webp" data-originalres="png" alt="apk">
+        <h3>Все типы иммиграционных программ</h3>
+        <p>США для Россиян, как получить иммиграционную визу в 2022г?</p>
+        <a href="">Читать далее</a>
+      </div>
+    </div>
+  </div>
+  <?php
+        include "include/footer.php";
+    ?>
 </body>
 </html>

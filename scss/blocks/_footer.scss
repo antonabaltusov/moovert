@@ -1,0 +1,80 @@
+.footer {
+  padding: 70px 0px;
+  background: #475d70;
+  &__nuv {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__links {
+    display: flex;
+    &_item {
+      display: block;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    & div {
+      & .footer__links_item:not(:first-child) {
+        margin-top: 15px;
+      }
+      &:first-child {
+        position: relative;
+        width: 328px;
+        &::after {
+          content: "";
+          height: 100%;
+          width: 1px;
+          background-color: #ffffff;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+      &:last-child {
+        padding-left: 84px;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    & p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #ffffff;
+    }
+    & a {
+      margin-top: 20px;
+      padding: 20px 40px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      background: #ff6c4f;
+      border-radius: 10px;
+    }
+  }
+  &__politic {
+    display: flex;
+    justify-content: space-between;
+    & a {
+      margin-top: 80px;
+      max-width: 380px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      text-decoration-line: underline;
+      color: #ffffff;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
