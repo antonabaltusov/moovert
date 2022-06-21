@@ -1,0 +1,31 @@
+.block3 {
+  &__list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 53px;
+  }
+  &__item {
+    & h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #293757;
+    }
+    & hr {
+      margin-top: 9px;
+      display: block;
+      height: 4px;
+      border: 0;
+      border-top: 1px solid #ff6c4f;
+      width: 100%;
+      padding: 0;
+    }
+    & p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #293757;
+    }
+  }
+}

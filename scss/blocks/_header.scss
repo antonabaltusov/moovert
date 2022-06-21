@@ -1,0 +1,68 @@
+.header {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(
+    125.41deg,
+    rgba(255, 255, 255, 0.47) -25.43%,
+    rgba(255, 255, 255, 0.31) 101.48%
+  );
+  backdrop-filter: blur(100px);
+  & .container {
+    padding: 27px 0 36px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &_left {
+    display: flex;
+    align-items: flex-end;
+    & button {
+      margin-left: 40px;
+      border: none;
+      background: inherit;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #475d70;
+    }
+  }
+  &_right {
+    display: flex;
+    align-items: center;
+    & select {
+      margin-right: 183px;
+      background: #475d70;
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+
+      color: #ffffff;
+      appearance: none;
+      & option {
+        background-image: url(../../img/moscow.svg);
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    & p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #ff6c4f;
+    }
+    &_time {
+      display: flex;
+      align-items: center;
+      & p {
+        margin-left: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #475d70;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.block6 {
+  &__list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+  }
+  &__item {
+    & h3 {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #293757;
+    }
+  }
+}

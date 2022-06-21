@@ -1,0 +1,118 @@
+.block1 {
+  &__main_wraper {
+    width: 100%;
+    padding-top: 126px + 28px;
+    background-image: url(../../img/bg-ph.jpg);
+    background-size: cover;
+    background-position: center;
+    & .block1__main {
+      overflow: visible;
+      padding-bottom: 186px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      & h1 {
+        width: 1300px;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 110px;
+        color: #293757;
+        & span {
+          color: #ff6c4f;
+        }
+      }
+      & p {
+        margin-top: 9px;
+        width: 422px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #293757;
+      }
+      & .button {
+        margin-top: 34px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: #ff6c4f;
+        border-radius: 10px;
+        padding: 32px 60px;
+        border: none;
+      }
+      &_video {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        & p {
+          margin-left: 23px;
+          width: 198px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  &__benefits {
+    position: relative;
+    width: 100%;
+    background: #293757;
+    & .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 62px 0 35px;
+      grid-column-gap: 30px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        & h3 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 130%;
+          color: #ffffff;
+        }
+        & hr {
+          margin-top: 20px;
+          display: block;
+          height: 1px;
+          border: 0;
+          border-top: 1px solid #ff6c4f;
+          width: 100%;
+          padding: 0;
+        }
+        & p {
+          margin-top: 20px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 130%;
+          color: #949bab;
+          & span {
+            font-weight: 700;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    & .button_down {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 100%;
+      left: 50%;
+      width: 101px;
+      height: 101px;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+    }
+  }
+}

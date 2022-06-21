@@ -1,0 +1,51 @@
+.block4 {
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+  &__info {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & p {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #293757;
+      &:nth-child(3) {
+        position: relative;
+        margin-top: 64px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        &::before {
+          content: url(../../img/“.svg);
+          position: absolute;
+          right: calc(100% + 19px);
+          top: -20px;
+        }
+        &::after {
+          content: url(../../img/”.svg);
+          position: absolute;
+          left: 101%;
+          bottom: -20px;
+        }
+      }
+    }
+    & a {
+      margin-top: 47px;
+      margin-right: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ff6c4f;
+      display: flex;
+      align-items: center;
+      & svg {
+        margin-left: 22px;
+      }
+    }
+  }
+}
